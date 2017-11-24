@@ -1,13 +1,13 @@
 name:                learnyouahaskell
-version:             0.1.0.0
+version:             0.0.1
 -- synopsis:
 -- description:
 homepage:            https://github.com/bionikspoon/learnyouahaskell#readme
-license:             BSD3
+license:             MIT
 license-file:        LICENSE
 author:              Manu Phatak
 maintainer:          bionikspoon@gmail.com
-copyright:           MIT
+copyright:           Copyright Manu Phatak (c) 2017
 category:            Web
 build-type:          Simple
 extra-source-files:  README.md
