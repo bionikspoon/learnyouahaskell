@@ -1,41 +1,62 @@
-name:                learnyouahaskell
-version:             0.0.1
--- synopsis:
--- description:
-homepage:            https://github.com/bionikspoon/learnyouahaskell#readme
-license:             MIT
-license-file:        LICENSE
-author:              Manu Phatak
-maintainer:          bionikspoon@gmail.com
-copyright:           Copyright Manu Phatak (c) 2017
-category:            Web
-build-type:          Simple
-extra-source-files:  README.md
-cabal-version:       >=1.10
+cabal-version: 1.12
 
-library
-  hs-source-dirs:      src
-  exposed-modules:     Lib
-  build-depends:       base >= 4.7 && < 5
-  default-language:    Haskell2010
+-- This file has been generated from package.yaml by hpack version 0.31.2.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: 2046d712118f9a79c5a6a8aeafb900cde55dbb787f5b9a75efbeb6ee02f8eb83
 
-executable learnyouahaskell-exe
-  hs-source-dirs:      app
-  main-is:             Main.hs
-  ghc-options:         -threaded -rtsopts -with-rtsopts=-N
-  build-depends:       base
-                     , learnyouahaskell
-  default-language:    Haskell2010
-
-test-suite learnyouahaskell-test
-  type:                exitcode-stdio-1.0
-  hs-source-dirs:      test
-  main-is:             Spec.hs
-  build-depends:       base
-                     , learnyouahaskell
-  ghc-options:         -threaded -rtsopts -with-rtsopts=-N
-  default-language:    Haskell2010
+name:           learnyouahaskell
+version:        0.1.0.0
+description:    Please see the README on GitHub at <https://github.com/bionikspoon/learnyouahaskell#readme>
+homepage:       https://github.com/bionikspoon/learnyouahaskell#readme
+bug-reports:    https://github.com/bionikspoon/learnyouahaskell/issues
+author:         Manu Phatak
+maintainer:     bionikspoon@gmail.com
+copyright:      2019 Manu Phatak
+license:        BSD3
+license-file:   LICENSE
+build-type:     Simple
+extra-source-files:
+    README.md
+    ChangeLog.md
 
 source-repository head
-  type:     git
+  type: git
   location: https://github.com/bionikspoon/learnyouahaskell
+
+library
+  exposed-modules:
+      Lib
+  other-modules:
+      Paths_learnyouahaskell
+  hs-source-dirs:
+      src
+  build-depends:
+      base >=4.7 && <5
+  default-language: Haskell2010
+
+executable learnyouahaskell-exe
+  main-is: Main.hs
+  other-modules:
+      Paths_learnyouahaskell
+  hs-source-dirs:
+      app
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      base >=4.7 && <5
+    , learnyouahaskell
+  default-language: Haskell2010
+
+test-suite learnyouahaskell-test
+  type: exitcode-stdio-1.0
+  main-is: Spec.hs
+  other-modules:
+      Paths_learnyouahaskell
+  hs-source-dirs:
+      test
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      base >=4.7 && <5
+    , learnyouahaskell
+  default-language: Haskell2010
