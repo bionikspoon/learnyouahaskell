@@ -2,3 +2,5 @@
 learnyouahaskell.cabal
 *~
 dist-newstyle
+*.hi
+*.o

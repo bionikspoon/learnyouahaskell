@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 84d9a2a68e3401c9096deecc576e9af59ef21d70ec103b0ed71d1d093b6eb3ae
+-- hash: b67c78f431c0961378515ee8bb745566f22fec4404ef688e7bf792ecc8d61944
 
 name:           learnyouahaskell
 version:        0.1.0.0
@@ -28,8 +28,12 @@ source-repository head
 library
   exposed-modules:
       Geometry
+      Geometry.Cube
+      Geometry.Cuboid
       Geometry.Sphere
       Lib
+      Tree
+      YesNo
   other-modules:
       Paths_learnyouahaskell
   hs-source-dirs:
