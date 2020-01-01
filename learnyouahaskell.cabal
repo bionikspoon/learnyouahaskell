@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: b67c78f431c0961378515ee8bb745566f22fec4404ef688e7bf792ecc8d61944
+-- hash: e30d996d15f02e63087a036d2454a672b6ba1ac2b4325f0f6012dd060c73ff1c
 
 name:           learnyouahaskell
 version:        0.1.0.0
@@ -41,6 +41,7 @@ library
   build-depends:
       base >=4.7 && <5
     , containers
+    , directory
   default-language: Haskell2010
 
 executable learnyouahaskell-exe
@@ -53,6 +54,7 @@ executable learnyouahaskell-exe
   build-depends:
       base >=4.7 && <5
     , containers
+    , directory
     , learnyouahaskell
   default-language: Haskell2010
 
@@ -67,5 +69,6 @@ test-suite learnyouahaskell-test
   build-depends:
       base >=4.7 && <5
     , containers
+    , directory
     , learnyouahaskell
   default-language: Haskell2010
