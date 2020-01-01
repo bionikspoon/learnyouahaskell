@@ -1,10 +1,3 @@
-module Tree
-  ( singleton
-  , treeInsert
-  , from
-  )
-where
-
 data Tree a = EmptyTree | Node a (Tree a) (Tree a) deriving ( Read, Eq)
 
 
@@ -46,20 +39,3 @@ instance (Show a) => Show (Tree a) where
   show (Node a left right) =
     show a ++ " (" ++ show left ++ "<>" ++ show right ++ ") "
 
-
-{-
-
->>> (*(-1)) <$> from [1..5]
--5
-
-
-
->>> :k Functor
-Functor :: (* -> *) -> Constraint
-
-
-
-
-
-
--}

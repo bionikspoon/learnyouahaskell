@@ -1,9 +1,3 @@
-module YesNo
-  ( yesnoIf
-  )
-where
-
-
 class YesNo a where
   yesno :: a -> Bool
 
